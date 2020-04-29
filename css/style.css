@@ -128,12 +128,16 @@ body {
 
 .slider-item__wrap {
   position: absolute;
-  margin-top: 50px;
+  width: 445px;
+  height: 264px;
+  top: 5%;
+  right: 15.5%;
 }
 
-.slider__item {
+.slider__item img {
   position: absolute;
   z-index: 1;
+  visibility: visible;
 }
 
 .slick-active {
