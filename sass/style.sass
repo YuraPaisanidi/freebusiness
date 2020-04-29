@@ -1,0 +1,396 @@
+$buttonColor: #ffbb42;
+
+body
+    margin: 0 auto
+    font-family: 'Open Sans', sans-serif
+
+.container
+    padding-left: 15px
+    padding-right: 15px
+    max-width: 1170px
+    margin: 0 auto
+
+.header
+    padding-top: 40px
+    padding-bottom: 40px
+
+    &__wrap
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+
+    &__nav
+        display: flex
+        flex-direction: row
+        align-items: center
+        width: 770/1170*100%
+
+        ul 
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            padding: 0
+            width: 100%
+
+        li 
+            list-style-type: none
+
+    &__link
+        text-decoration: none
+        color: #a6a6a6
+        font-size: 14px
+        text-transform: uppercase
+        width: 80px
+        height: 35px
+        padding: 7px
+
+    &__link:hover
+        border: 1px solid $buttonColor
+        border-radius: 5px
+        box-sizing: border-box
+        background-color: $buttonColor
+        color: #ffffff
+
+.main
+    padding-top: 110px
+    padding-bottom: 345px
+    background-color: #709dca
+    position: relative
+
+    &__wrap
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+    
+    &__title
+        color: #ffffff
+        text-transform: uppercase
+        font-size: 35px
+        font-weight: 800
+        margin: 0
+
+    &__subtitle
+        color: #ffffff
+        font-size: 16px
+        margin: 0
+        padding-bottom: 35px
+    
+    &__inputs
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        width: 1090/1170*100%
+
+    &__button
+        text-decoration: none
+        text-transform: uppercase
+        color: #ffffff
+        font-size: 14px
+        border: 1px solid $buttonColor
+        border-radius: 5px
+        background-color: $buttonColor
+        width: 210/1090*100%
+        height: 50px
+        display: flex
+        align-items: center
+        justify-content: center
+
+        &:hover
+            transform: scale(1.02)
+            transition: 0.5s
+
+    &__slider_wrap
+        position: absolute
+        top: 55%
+        display: flex
+        align-items: center
+        justify-content: center
+        z-index: 0
+        
+
+.slider-item__wrap
+    position: absolute
+    margin-top: 50px
+    // top: 5%
+    // right: 15.5%
+
+
+.slider__item 
+    position: absolute
+    z-index: 1
+
+.slick-active 
+  outline: none;
+
+
+
+.input__name
+    width: 240/1090*100%
+    max-width: 240px
+    height: 50px
+    padding-left: 40px
+    background-image: url('../img/icon1.png')
+    background-repeat: no-repeat
+    background-position: left 15px top 50%
+    border: none
+    border-radius: 5px
+    
+
+.input__email
+    width: 240/1090*100%
+    max-width: 240px
+    height: 50px
+    padding-left: 40px
+    background-image: url('../img/icon2.png')
+    background-repeat: no-repeat
+    background-position: left 15px top 50%
+    border: none
+    border-radius: 5px
+
+.input__phone
+    width: 240/1090*100%
+    max-width: 240px
+    height: 50px
+    padding-left: 40px
+    background-image: url('../img/icon3.png')
+    background-repeat: no-repeat
+    background-position: left 15px top 50%
+    border: none
+    border-radius: 5px
+
+.services
+    padding-top: 205px
+    padding-bottom: 160px
+
+    &__wrap
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+
+    &__title
+        margin: 0
+        color: #394b50
+        font-size: 30px
+        text-transform: uppercase
+        font-weight: 800
+
+    &__subtitle
+        margin: 0
+        color:  #394b50
+        font-size: 16px
+        margin-bottom: 90px
+
+    &__row
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-around
+        height: 435px
+
+    &__column
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        width: 535/1170*100%
+        height: 100%
+        
+
+    &__item
+        display: flex
+        flex-direction: row
+        align-items: start
+        justify-content: space-around
+        width: 100%
+        max-height: 95px
+
+    &__item_text
+        width: 440/535*100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        
+
+    &__item_title
+        text-transform: uppercase
+        font-size: 16px
+        font-weight: 700
+        color: #394b50
+
+    &__item_info
+        color: #7b7b7b
+        font-size: 13px
+        margin: 0
+ 
+.about
+
+    &__wrap
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        height: 625px
+        max-height: 625px
+    
+    &__image
+        width: 100%
+        background-image: url('../img/about.png')
+        background-repeat: no-repeat
+        background-size: cover
+        height: 625px
+        // max-height: 625px
+
+    &__item
+        padding-top: 165px
+        padding-bottom: 175px
+        padding-left: 80px
+        max-width: 505px
+
+    &__item_bg
+        width: 100%
+        background-color: #ffc155
+
+        
+
+
+
+    &__title
+        color: #ffffff
+        font-size: 30px
+        font-weight: 800
+        text-transform: uppercase
+        margin-bottom: 30px
+
+    &__text
+        color: #ffffff
+        font-size: 13px
+        margin: 0
+        margin-bottom: 30px
+        
+
+
+    &__button
+        text-decoration: none
+        text-transform: uppercase
+        color: #ffffff
+        border: 1px solid #e7ad48
+        border-radius: 5px
+        font-size: 14px
+        font-family: Lato, sans-serif
+        height: 45px
+        width: 145px
+        display: flex
+        align-items: center
+        justify-content: center
+
+        &:hover
+            transform: scale(1.02)
+            transition: 0.5s
+
+.item__container
+    height: 285px
+    max-height: 285px
+    width: 505px
+    max-width: 505px
+    display: flex
+    flex-direction: column
+
+.your-plan
+    padding-top: 140px
+    padding-bottom: 195px
+    background-color: #e7edf3
+
+    &__wrap
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+
+    &__title
+        color: #394b50
+        font-size: 30px
+        font-weight: 800
+        text-transform: uppercase
+        margin: 0
+
+    &__subtitle
+        color: #75888d
+        font-size: 18px
+        margin-bottom: 85px
+
+    &__items
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        width: 100%
+
+    &__card
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        padding-top: 55px
+        padding-bottom: 50px
+        width: 390/1170*100%
+        border: 1px solid #ccd5df
+        border-radius: 5px
+        background-color: #fff
+
+        &:hover
+            transition: all 0.5s
+            transform: scale(1.1)
+            cursor: pointer
+            color: #ffffff
+            background-color: #709dca
+            
+            .card__title
+                color: #ffffff
+            
+            .card__text
+                color: #ffffff
+
+.card__title
+    font-size: 25px
+    color: #818b95
+    font-weight: 400
+    text-transform: uppercase
+    margin-bottom: 30px
+
+.card__price
+    margin-bottom: 35px
+
+
+.card__text
+    text-transform: uppercase
+    font-size: 14px
+    color: #b5bbc1
+    border-top: 1px solid #e2e9f0
+    padding-top: 15px
+    padding-bottom: 15px
+    width: 330px
+    text-align: center
+
+.card__button
+    text-transform: uppercase
+    text-decoration: none
+    color: #ffffff
+    font-size: 14px
+    height: 40px
+    width: 130px
+    background-color: $buttonColor
+    border-radius: 5px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-top: 20px
+
+    &:hover
+        transform: scale(1.02)
+        transition: 0.5s
