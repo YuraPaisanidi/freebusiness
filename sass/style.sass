@@ -49,6 +49,7 @@ button, input, a
         width: 80px
         height: 35px
         padding: 7px
+        
 
     &__link:hover
         border: 1px solid $buttonColor
@@ -81,6 +82,7 @@ button, input, a
         font-size: 16px
         margin: 0
         padding-bottom: 35px
+        text-align: center
     
     &__inputs
         display: flex
@@ -124,7 +126,6 @@ button, input, a
     top: 5%
     right: 15.5%
 
-
 .slider__item 
     img
         position: absolute
@@ -133,8 +134,6 @@ button, input, a
 
 .slick-active 
     outline: none;
-
-
 
 .input__name
     width: 240/1090*100%
@@ -198,7 +197,7 @@ button, input, a
         flex-direction: row
         align-items: center
         justify-content: space-around
-        height: 435px
+        // height: 435px
 
     &__column
         display: flex
@@ -216,6 +215,8 @@ button, input, a
         justify-content: space-around
         width: 100%
         max-height: 95px
+        margin-bottom: 20px
+
 
     &__item_text
         width: 440/535*100%
@@ -243,15 +244,15 @@ button, input, a
         flex-direction: row
         align-items: center
         justify-content: space-between
-        height: 625px
-        max-height: 625px
+        height: 619px
+        max-height: 619px
     
     &__image
         width: 100%
         background-image: url('../img/about.png')
         background-repeat: no-repeat
         background-size: cover
-        height: 625px
+        height: 619px
         // max-height: 625px
 
     &__item
@@ -264,10 +265,6 @@ button, input, a
         width: 100%
         background-color: #ffc155
 
-        
-
-
-
     &__title
         color: #ffffff
         font-size: 30px
@@ -279,9 +276,6 @@ button, input, a
         color: #ffffff
         font-size: 13px
         margin: 0
-        margin-bottom: 30px
-        
-
 
     &__button
         text-decoration: none
@@ -302,12 +296,11 @@ button, input, a
             transition: all 0.5s
 
 .item__container
-    height: 285px
-    max-height: 285px
     width: 505px
     max-width: 505px
     display: flex
     flex-direction: column
+    margin-bottom: 35px
 
 .your-plan
     padding-top: 140px
@@ -400,7 +393,7 @@ button, input, a
     border-top: 1px solid #e2e9f0
     padding-top: 10px
     padding-bottom: 10px
-    width: 330px
+    width: 330/386*100%
     text-align: center
 
 .card__button
@@ -485,6 +478,10 @@ button, input, a
             justify-content: space-between
             width: 225/1170*100%
             text-align: center
+
+            &:hover
+                transform: scale(1.05)
+                transition: all 0.5s
 
             img 
                 margin-bottom: 100px
@@ -669,10 +666,10 @@ button, input, a
                 transition: all 0.5s
 
     &__map-block
-        width: 1170px
+        width: 100%
         background-image: url('../img/doted_map.png')
         background-repeat: no-repeat
-        background-size: cover
+        background-size: 100%
         padding-top: 40px
         padding-bottom: 220px
         display: flex
@@ -738,6 +735,7 @@ button, input, a
             justify-content: space-between
             flex-direction: row
             width: 100%
+            padding: 0
         
         li 
             list-style-type: none
@@ -792,3 +790,253 @@ button, input, a
         color: #fff
         font-size: 13px
         margin: 0
+
+@media screen and ( max-width: 992px )
+    .header
+        padding: 5px 0
+
+        &__nav
+            width: 770/962*100%
+
+    .main
+        padding: 50px 0
+
+        &__slider_wrap
+            top: 120%
+            transform: scale(1.2)
+
+        &__slider_bg
+    
+    .services
+        padding-top: 500px
+        padding-bottom: 80px
+
+        &__subtitle
+            margin-bottom: 45px
+
+    .about
+
+        &__wrap
+            height: 350px
+
+        .item__container
+            width: 90%
+            margin-bottom: 25px
+
+        &__title
+            margin-bottom: 15px
+
+        &__item
+            padding-top: 30px
+            padding-bottom: 30px
+        
+        &__image
+            height: 350px
+
+        &__button
+            height: 45px
+
+    .your-plan
+        padding-top: 50px
+        padding-bottom: 50px
+
+        &__subtitle
+            margin-bottom: 30px
+
+        &__card
+            width: 33%
+            padding: 10px 0
+
+        .card__text
+            width: 80%
+
+    .how-it-works
+        padding-top: 40px
+        padding-bottom: 60px
+
+        &__subtitle
+            margin-bottom: 60px
+
+        &__steps
+            margin-bottom: 50px
+
+    .happy-clients
+        padding-top: 50px
+        padding-bottom: 70px
+
+    .newsletter
+        padding-top: 60px
+        padding-bottom: 0px
+
+        &__input-block
+            width: 935/962*100%
+
+        &__map-block
+            padding-bottom: 150px
+
+    .footer
+        padding-top: 25px
+        padding-bottom: 25px
+
+        &__nav
+            width: 725/962*100%
+
+@media screen and ( max-width: 768px )
+    .title
+        font-size: 28px
+
+    .header
+
+        &__nav
+            width: 85%
+
+        &__link
+            padding: 3px
+    .main
+        padding: 20px 0
+
+        &__subtitle
+            width: 70%
+
+        &__inputs
+            width: 100%
+
+        .input__name
+            width: 20%
+            
+
+        .input__email
+            width: 20%
+            
+
+        .input__phone
+            width: 20%
+        
+        &__slider_wrap
+            top: 115%
+            transform: scale(1.1)
+    
+    .services
+        padding-top: 450px
+        padding-bottom: 50px
+
+        &__subtitle
+            margin-bottom: 60px
+
+        &__row
+            flex-direction: column
+
+        &__column
+            width: 85%
+            
+        &__column:first-child
+            margin-bottom: 25px
+
+        &__item
+            box-shadow: 0 0 15px rgba(0,0,0,0.1)
+            border-radius: 5px
+            padding: 25px
+            margin-bottom: 25px
+
+        &__item:nth-child(3)
+            margin-bottom: 0
+            
+            
+        
+    .about
+        &__item
+            padding-top: 15px
+            padding-bottom: 30px
+            padding-left: 50px
+        
+        &__wrap
+            height: 363px
+
+        &__image
+            height: 363px
+
+        &__title
+            margin-bottom: 10px
+
+        &__button
+            height: 45px
+    
+    .your-plan
+        &__card
+            width: 32%
+        
+        .card__price
+            transform: scale(0.9)
+
+        .card__period
+            margin-bottom: 20px
+            font-size: 18px
+        
+        .card__title
+            margin-bottom: 15px
+            font-size: 22px
+
+    .how-it-works
+        padding-bottom: 30px
+        &__subtitle
+            margin-bottom: 30px
+
+        &__steps
+            flex-direction: column
+            margin-bottom: 25px
+
+        &__steps_card
+            margin-bottom: 30px
+            box-shadow: 0 0 15px rgba(0,0,0,0.1)
+            border-radius: 5px
+            padding: 15px
+            width: 60%
+
+            &:hover
+                transform: scale(1.05)
+                transition: all 0.5s
+            
+            img 
+                margin-bottom: 40px
+
+        &__steps_card:last-child
+            margin-bottom: 0
+
+    .happy-clients
+        padding-top: 25px
+        padding-bottom: 50px
+
+        &__subtitle
+            margin-bottom: 40px
+
+        &__row
+            flex-direction: column
+
+        &__card
+            width: 90%
+
+        &__card:nth-child(1)
+            margin-bottom: 18px
+
+    .newsletter
+        padding-top: 35px
+
+        &__input-block
+            width: 85%
+        
+            &_name
+                width: 28%
+
+            &_email
+                width: 28%
+
+        &__map-block
+            padding-bottom: 75px
+    
+    .footer
+        padding-top: 15px
+        padding-bottom: 20px
+
+        &__nav
+            width: 85%
+            
