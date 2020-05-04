@@ -152,7 +152,6 @@ button:focus, input:focus, a:focus {
 
 .input__name {
   width: 22.01835%;
-  max-width: 240px;
   height: 50px;
   padding-left: 40px;
   background-image: url("../img/icon1.png");
@@ -164,7 +163,6 @@ button:focus, input:focus, a:focus {
 
 .input__email {
   width: 22.01835%;
-  max-width: 240px;
   height: 50px;
   padding-left: 40px;
   background-image: url("../img/icon2.png");
@@ -176,7 +174,6 @@ button:focus, input:focus, a:focus {
 
 .input__phone {
   width: 22.01835%;
-  max-width: 240px;
   height: 50px;
   padding-left: 40px;
   background-image: url("../img/icon3.png");
@@ -1105,5 +1102,201 @@ button:focus, input:focus, a:focus {
   }
   .footer__nav {
     width: 85%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .title {
+    font-size: 22px;
+  }
+  .subtitle {
+    font-size: 12px;
+  }
+  .header__nav {
+    width: 85%;
+  }
+  .header__link {
+    font-size: 10px;
+  }
+  .main__inputs {
+    flex-direction: column;
+  }
+  .main .input__name {
+    width: 75%;
+    margin-bottom: 20px;
+  }
+  .main .input__email {
+    width: 75%;
+    margin-bottom: 20px;
+  }
+  .main .input__phone {
+    width: 75%;
+    margin-bottom: 20px;
+  }
+  .main__button {
+    width: 30%;
+  }
+  .main__slider_wrap {
+    top: 105%;
+    transform: scale(0.85);
+  }
+  .services {
+    padding-top: 400px;
+  }
+  .services__item_title {
+    font-size: 14px;
+  }
+  .services__item_info {
+    font-size: 11px;
+  }
+  .about .item__container {
+    align-items: center;
+  }
+  .about__wrap {
+    height: 276px;
+  }
+  .about__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__text {
+    font-size: 12px;
+    text-align: center;
+  }
+  .about__image {
+    display: none;
+  }
+  .your-plan {
+    padding-top: 25px;
+  }
+  .your-plan .card__title {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .your-plan .card__price {
+    transform: scale(0.8);
+  }
+  .your-plan .card__period {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  .your-plan .card__text {
+    font-size: 10px;
+  }
+  .your-plan .card__button {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .how-it-works {
+    padding-top: 20px;
+  }
+  .how-it-works__steps_card {
+    padding: 10px;
+  }
+  .how-it-works__steps_card img {
+    transform: scale(0.8);
+    margin-bottom: 20px;
+  }
+  .how-it-works .steps_card_title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .how-it-works .steps_card_text {
+    font-size: 12px;
+  }
+  .how-it-works__button {
+    transform: scale(0.8);
+    font-size: 12px;
+  }
+  .happy-clients {
+    padding-top: 15px;
+    padding-bottom: 25px;
+  }
+  .happy-clients__card {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .happy-clients__card img {
+    transform: scale(0.8);
+  }
+  .happy-clients__card_message {
+    font-size: 12px;
+  }
+  .happy-clients__card_author {
+    font-size: 12px;
+  }
+  .newsletter {
+    padding-top: 25px;
+  }
+  .newsletter__subtitle {
+    margin-bottom: 25px;
+  }
+  .newsletter__input-block {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .newsletter__input-block_name {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .newsletter__input-block_email {
+    width: 66%;
+    margin-bottom: 20px;
+  }
+  .newsletter__input-block_button {
+    width: 30%;
+    font-size: 12px;
+  }
+  .newsletter__map-block {
+    padding-top: 0;
+    padding-bottom: 15px;
+    height: 350px;
+  }
+  .newsletter__map-block_address-bg {
+    transform: scale(0.7);
+  }
+  .newsletter__logo {
+    transform: scale(0.9);
+  }
+  .footer {
+    padding: 0;
+    padding-bottom: 5px;
+  }
+  .footer__wrap {
+    justify-content: space-around;
+    height: 120px;
+  }
+  .footer__nav {
+    width: 90%;
+  }
+  .footer .footer__link {
+    font-size: 9px;
+  }
+  .footer__tel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .footer__tel_phone {
+    transform: scale(0.7);
+  }
+  .footer__tel_num {
+    font-size: 14px;
+  }
+  .footer__social {
+    width: 15%;
+    display: flex;
+    align-items: center;
+  }
+  .footer__social img {
+    transform: scale(0.8);
+  }
+  .copyright {
+    padding: 5px;
+  }
+  .copyright__text {
+    font-size: 10px;
+    text-align: center;
   }
 }

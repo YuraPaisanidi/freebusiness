@@ -137,7 +137,7 @@ button, input, a
 
 .input__name
     width: 240/1090*100%
-    max-width: 240px
+    // max-width: 240px
     height: 50px
     padding-left: 40px
     background-image: url('../img/icon1.png')
@@ -149,7 +149,7 @@ button, input, a
 
 .input__email
     width: 240/1090*100%
-    max-width: 240px
+    // max-width: 240px
     height: 50px
     padding-left: 40px
     background-image: url('../img/icon2.png')
@@ -160,7 +160,7 @@ button, input, a
 
 .input__phone
     width: 240/1090*100%
-    max-width: 240px
+    // max-width: 240px
     height: 50px
     padding-left: 40px
     background-image: url('../img/icon3.png')
@@ -1039,4 +1039,206 @@ button, input, a
 
         &__nav
             width: 85%
+
+@media screen and ( max-width: 576px )
+    .title
+        font-size: 22px
+    
+    .subtitle
+        font-size: 12px
+
+    .header
+
+        &__nav
+            width: 85%
+
+        &__link
+            font-size: 10px
+
+    .main
+
+        &__inputs
+            flex-direction: column
+            width: 
+
+        .input__name
+            width: 75%
+            margin-bottom: 20px
             
+
+        .input__email
+            width: 75%
+            margin-bottom: 20px
+
+        .input__phone
+            width: 75%
+            margin-bottom: 20px
+
+        &__button
+            width: 30%
+
+        &__slider_wrap
+            top: 105%
+            transform: scale(0.85)
+
+    .services
+        padding-top: 400px
+
+        &__item
+
+            &_title
+                font-size: 14px
+
+            &_info
+                font-size: 11px
+
+    .about
+        .item__container
+            align-items: center
+
+        &__wrap
+            height: 276px
+
+        &__item
+            display: flex
+            flex-direction: column
+            align-items: center
+
+        &__text
+            font-size: 12px
+            text-align: center
+
+        &__image
+            display: none
+
+    .your-plan
+        padding-top: 25px
+
+        .card__title
+            font-size: 16px
+            margin-bottom: 0
+
+        .card__price
+            transform: scale(0.8)
+
+        .card__period
+            font-size: 10px
+            margin-bottom: 10px
+
+        .card__text
+            font-size: 10px
+
+        .card__button
+            margin-top: 10px
+            font-size: 12px
+
+    .how-it-works
+        padding-top: 20px
+
+        &__steps
+
+            &_card
+                padding: 10px
+
+                img 
+                    transform: scale(0.8)
+                    margin-bottom: 20px
+
+        .steps_card_title
+            font-size: 18px
+            margin-bottom: 15px
+        
+        .steps_card_text
+            font-size: 12px
+
+        &__button
+            transform: scale(0.8)
+            font-size: 12px
+
+    .happy-clients
+        padding-top: 15px
+        padding-bottom: 25px
+
+        &__card
+            padding-top: 20px
+            padding-bottom: 20px
+            img 
+                transform: scale(0.8)
+
+            &_message
+                font-size: 12px
+
+            &_author
+                font-size: 12px
+    
+    .newsletter
+        padding-top: 25px
+
+        &__subtitle
+            margin-bottom: 25px
+
+        &__input-block
+            flex-direction: column
+            margin-bottom: 30px
+
+            &_name
+                width: 80%
+                margin-bottom: 20px
+            
+            &_email
+                width: 66%
+                margin-bottom: 20px
+            
+            &_button
+                width: 30%
+                font-size: 12px
+
+        &__map-block
+            padding-top: 0
+            padding-bottom: 15px
+            height: 350px
+
+            &_address-bg
+                transform: scale(0.7)
+
+        &__logo
+            transform: scale(0.9)
+
+    .footer
+        padding: 0
+        padding-bottom: 5px
+
+        &__wrap
+            justify-content: space-around
+            height: 120px
+
+        &__nav
+            width: 90%
+
+        .footer__link
+            font-size: 9px
+
+        &__tel
+            display: flex
+            align-items: center
+            margin-bottom: 15px
+
+        &__tel_phone
+            transform: scale(0.7)
+
+        &__tel_num
+            font-size: 14px
+        
+        &__social
+            width: 15%
+            display: flex
+            align-items: center
+
+            img 
+                transform: scale(0.8)
+    .copyright
+        padding: 5px
+
+        &__text
+            font-size: 10px
+            text-align: center
