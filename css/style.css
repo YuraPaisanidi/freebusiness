@@ -1435,3 +1435,98 @@ button:focus, input:focus, a:focus {
     font-size: 8px;
   }
 }
+
+@media screen and (max-width: 479px) {
+  .title {
+    font-size: 16px;
+    text-align: center;
+  }
+  .subtitle {
+    font-size: 10px;
+  }
+  .header {
+    display: none;
+  }
+  .main .input__name {
+    height: 40px;
+  }
+  .main .input__email {
+    height: 40px;
+  }
+  .main .input__phone {
+    height: 40px;
+  }
+  .main__slider_wrap {
+    transform: scale(0.45);
+    top: 80%;
+  }
+  .services {
+    padding-top: 210px;
+  }
+  .services__item {
+    width: 80%;
+    padding: 10px;
+  }
+  .services__item_title {
+    font-size: 12px;
+  }
+  .services__item_info {
+    font-size: 9px;
+  }
+  .services__item img {
+    transform: scale(0.7);
+  }
+  .about__wrap {
+    height: 316px;
+  }
+  .your-plan {
+    padding-top: 15px;
+  }
+  .how-it-works {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .happy-clients__card_text {
+    width: 90%;
+    text-align: center;
+  }
+  .happy-clients__card_message {
+    font-size: 10px;
+  }
+  .happy-clients__card_author {
+    font-size: 10px;
+  }
+  .happy-clients__card img {
+    transform: scale(0.6);
+  }
+  .newsletter__input-block_name {
+    height: 40px;
+  }
+  .newsletter__input-block_email {
+    height: 40px;
+  }
+  .newsletter__map-block_address-bg {
+    transform: scale(0.8);
+  }
+  .newsletter__logo {
+    display: none;
+  }
+  .footer__nav {
+    margin-bottom: 5px;
+  }
+  .footer__link {
+    font-size: 4.5px !important;
+  }
+  .footer__tel {
+    margin-bottom: 5px;
+  }
+  .footer__tel_num {
+    font-size: 10px;
+  }
+  .footer__social img {
+    transform: scale(0.5);
+  }
+  .copyright__text {
+    font-size: 6px;
+  }
+}
