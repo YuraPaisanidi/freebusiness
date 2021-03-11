@@ -3,6 +3,11 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+:root {
+  scroll-behavior: smooth;
+}
+
+
 button:focus, input:focus, a:focus {
   outline: none;
 }
